@@ -27,17 +27,21 @@ By completing this task, you will learn:
 
 1. **Setup venv: (also can be configured via IDE)**
    ```bash
-   python -m venv .venv
+   python3 -m venv .venv
    ``` 
 2. **Install dependencies:**
    ```bash
-   pip install -r requirements.txt
+   source .venv/bin/activate
+   pip3 install -r requirements.txt
+   deactivate
    ```
 
 3. **Set your API key:**
     - Ensure that you connected to the EPAM VPN
     - Get the DIAL API key here: https://support.epam.com/ess?id=sc_cat_item&table=sc_cat_item&sys_id=910603f1c3789e907509583bb001310c
     - Get available models from: https://ai-proxy.lab.epam.com/openai/models
+
+    Add key to `.env` file as **DIAL_API_KEY** variable.  
 
 4. **Project structure:**
    ```
